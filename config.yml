@@ -1,0 +1,16 @@
+title: Development Solutions
+description: Product development and troubleshooting codes and ideas samples and solutions.
+template:
+  repo: development-solutions-template
+  name: development-solutions
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
